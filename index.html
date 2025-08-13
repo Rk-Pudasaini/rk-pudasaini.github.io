@@ -11,134 +11,152 @@
 </head>
 <body>
 
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="https://rk-pudasaini.github.io/">Ram Krishna Pudasaini</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Categories</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <header class="jumbotron">
-        <div class="container text-center">
+    <!-- Hero -->
+    <header class="jumbotron text-center">
+        <div class="container">
             <h1 class="display-4">Welcome to My Portfolio</h1>
             <p class="lead">Embark on a journey through my creative work and personal narrative.</p>
         </div>
     </header>
 
-   <div class="container">
-    <section id="about" class="py-5">
-        <div class="row">
-            <div class="col-md-6 mx-auto">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 text-center">
-                        <img src="https://i.ibb.co/Rv5pRVn/IMG-6e012f4fa9f4c4fc654dd1a23be57c11-V.jpg" class="rounded-circle" alt="Your Image" style="width: 300px; height: 300px;">
+    <!-- About Me -->
+    <div class="container">
+        <section id="about" class="py-5">
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center">
+                    <img src="https://i.ibb.co/Rv5pRVn/IMG-6e012f4fa9f4c4fc654dd1a23be57c11-V.jpg" class="rounded-circle" style="width: 300px; height: 300px;">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-center">About Me</h2>
+                    <p class="text-center">Greetings everyone, I'm Ram Krishna Pudasaini, a Data Science enthusiast with a passion to drive insights from data and solve complex problems.</p>
+                    <p class="text-center">My journey in Data Science has been one of continuous exploration and growth.</p>
+                    <p class="text-center">I believe data can help us make smarter decisions and solve big global challenges.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">My Skills</h2>
+                <div class="row text-center">
+                    <div class="col-md-3"><span class="badge badge-primary p-3">Python</span></div>
+                    <div class="col-md-3"><span class="badge badge-success p-3">Machine Learning</span></div>
+                    <div class="col-md-3"><span class="badge badge-warning p-3">Data Visualization</span></div>
+                    <div class="col-md-3"><span class="badge badge-info p-3">SQL</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="Projects" class="py-5">
+            <h2 class="text-center">Project Overview</h2>
+            <hr><br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/fetal-health-analysis.jpg" alt="fetal_health_analysis" class="card-img-top">
+                        <div class="card-body">
+                            <h4>Fetal Health Classification</h4>
+                            <p>Classifying fetal health using CTG data.</p>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/market_basket_analysis.jpg" alt="market_basket_analysis" class="card-img-top">
+                        <div class="card-body">
+                            <h4>Market Basket Analysis</h4>
+                            <p>Analyzing transactions for product associations.</p>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/forecasting_time_series.jpg" alt="time_series_analysis" class="card-img-top">
+                        <div class="card-body">
+                            <h4>Forecasting Temperature</h4>
+                            <p>Predicting Kathmandu's temperature trends.</p>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">Read More</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="text-center">About Me</h2>
-                        <p class="text-center">Greetings everyone, I'm Ram Krishna Pudasaini, a Data Science enthusiast with a passion to drive insights from data and solve complex problems.</p>
-                        <p class="text-center">My journey in the realm of Data Science has been one of continuous exploration and growth. It's a journey fueled by curiosity, perseverance, and an unwavering commitment to excellence. It's all about learning and growing.</p>
-                        <p class="text-center">I believe data can help us make smarter decisions, improve how businesses run, and even tackle big global issues. That's why I'm always eager to explore data and collect insights from them.</p>
-                    </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="py-5 bg-light">
+            <h2 class="text-center mb-4">What People Say</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <blockquote class="blockquote">
+                        <p>"Ram is an excellent problem solver with great data insights!"</p>
+                        <footer class="blockquote-footer">Colleague A</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4 text-center">
+                    <blockquote class="blockquote">
+                        <p>"A true professional in data science and machine learning."</p>
+                        <footer class="blockquote-footer">Client B</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4 text-center">
+                    <blockquote class="blockquote">
+                        <p>"His work helped us make better business decisions."</p>
+                        <footer class="blockquote-footer">Manager C</footer>
+                    </blockquote>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id = "Projects" class = "py-5">
-      <div class = "row">
-          <div class="col-md-12">
-                <h2 class="text-center">Project Overview</h2>
-           <hr>
-           <br>
-          </div>          
-      </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img class="blog-thumbnail" src="assets/fetal-health-analysis.jpg" alt="fetal_health_analysis">
-            <div class="card-body">
-              <h4 class="card-title">Fetal Health Classification</h4>
-              <p class="card-text">The Primary purpose of this project to classify the fetal health (Normal, Suspect or Pathologic) based on the CTG data.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="#" class="btn btn-sm btn-outline-secondary">Read More</a>
+        <!-- Contact Form -->
+        <section id="contact" class="py-5">
+            <h2 class="text-center mb-4">Get In Touch</h2>
+            <form class="col-md-8 mx-auto">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" placeholder="Your Name">
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- You can repeat this block for additional blog posts -->
-
-         <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img class="blog-thumbnail" src="assets/market_basket_analysis.jpg" alt="market_basket_analysis">
-            <div class="card-body">
-              <h4 class="card-title">Market Basket Analysis</h4>
-              <p class="card-text">In this project we analyze the transaction data and find the association between the products</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="#" class="btn btn-sm btn-outline-secondary">Read More</a>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" placeholder="Your Email">
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- You can repeat this block for additional blog    -->
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img class="blog-thumbnail" src="assets/forecasting_time_series.jpg" alt="time_series_analysis">
-            <div class="card-body">
-              <h4 class="card-title">Forecasting Temperature</h4>
-              <p class="card-text">In this project we analyze the historical data of Kathmandu city and forecast the temperature.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="#" class="btn btn-sm btn-outline-secondary">Read More</a>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-       
+                <button type="submit" class="btn btn-dark btn-block">Send Message</button>
+            </form>
+        </section>
+    </div>
 
-      </div>
-    </section>
-</div>
-
-
-
+    <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025- Ram Krishna Pudasaini</p>
+        <p>&copy; 2025 - Ram Krishna Pudasaini</p>
     </footer>
 
-    <!-- Bootstrap JS and dependencies -->
+    <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
