@@ -38,19 +38,34 @@
 
     <!-- About Me -->
     <div class="container">
-        <section id="about" class="py-5">
-            <div class="row">
-                <div class="col-md-6 mx-auto text-center">
-                    <img src="https://i.ibb.co/Rv5pRVn/IMG-6e012f4fa9f4c4fc654dd1a23be57c11-V.jpg" class="rounded-circle" style="width: 300px; height: 300px;">
-                </div>
-                <div class="col-md-6">
-                    <h2 class="text-center">About Me</h2>
-                    <p class="text-center">Greetings everyone, I'm Ram Krishna Pudasaini, a Data Science enthusiast with a passion to drive insights from data and solve complex problems.</p>
-                    <p class="text-center">My journey in the realm of Data Science has been one of continuous exploration and growth. It's a journey fueled by curiosity, perseverance, and an unwavering commitment to excellence. It's all about learning and growing.</p>
-                    <p class="text-center">I believe data can help us make smarter decisions, improve how businesses run, and even tackle big global issues. That's why I'm always eager to explore data and collect insights from them.</p>
+            <section id="about" class="py-5 about-section">
+            <div class="card about-card shadow-lg border-0 rounded-4 p-4">
+                <div class="row align-items-center">
+                    <!-- Image Section -->
+                    <div class="col-md-5 text-center">
+                        <img src="https://i.ibb.co/Rv5pRVn/IMG-6e012f4fa9f4c4fc654dd1a23be57c11-V.jpg" 
+                             class="rounded-4 shadow-sm img-fluid about-img" 
+                             alt="Ram Krishna Pudasaini">
+                    </div>
+                    
+                    <!-- About Text -->
+                    <div class="col-md-7">
+                        <h2 class="text-center fw-bold mb-4">About Me</h2>
+                        <p class="lead text-center">
+                            Greetings everyone, I'm <strong>Ram Krishna Pudasaini</strong>, a Data Science enthusiast with a passion to drive insights from data and solve complex problems.
+                        </p>
+                        <p class="text-center">
+                            My journey in the realm of Data Science has been one of continuous exploration and growth, fueled by curiosity, perseverance, and an unwavering commitment to excellence.
+                        </p>
+                        <p class="text-center">
+                            I believe data can help us make smarter decisions, improve how businesses run, and even tackle big global issues. That's why I'm always eager to explore data and collect insights from them.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
+
+
 
                    <!-- Skills -->
         <section id="skills" class="py-5 bg-light">
@@ -440,6 +455,42 @@
         
          <!-- Custom CSS -->
         <style>
+        
+            /* Section background */
+            .about-section {
+                background: linear-gradient(135deg, #f9f9f9, #f0f4f8);
+            }
+        
+            /* Card styling */
+            .about-card {
+                background: white;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+        
+            /* Hover effect for floating feel */
+            .about-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+            }
+        
+            /* Image styling */
+            .about-img {
+                width: 300px;
+                height: 300px;
+                object-fit: cover;
+            }
+        
+            /* Paragraph color */
+            .about-card p {
+                color: #555;
+            }
+        
+            /* Heading color */
+            .about-card h2 {
+                color: #333;
+            }
+        
+
             .skill-card {
                 border-radius: 12px;
                 transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -504,6 +555,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
 
 
 
